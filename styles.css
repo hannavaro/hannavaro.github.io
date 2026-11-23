@@ -35,3 +35,17 @@
 .dialog-lead:has(+.dialog-site){margin-bottom:18px}
 .dialog-site{margin-bottom:25px}
 @media(max-width:390px){.case-dialog h2{font-size:clamp(32px,11vw,43px);overflow-wrap:anywhere}}
+
+/* Featured websites and the STUTPLATFORM screen sequence */
+.live-projects{grid-template-columns:repeat(3,minmax(0,1fr))}
+.live-projects .feature-content{display:grid;grid-template-rows:1fr auto;align-items:start;gap:20px;min-height:0;padding:24px}
+.live-projects .feature-content h3{margin-top:0;font-size:clamp(30px,3vw,44px)}
+.feature-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.feature-actions .detail-trigger{width:auto;height:auto;min-width:0;min-height:40px;flex:0 0 auto;gap:8px;padding:7px 11px;font-size:13px;font-weight:660;line-height:1.2}
+.feature-actions .detail-trigger>span:first-child{position:static;width:auto;height:auto;overflow:visible;clip-path:none}
+.feature-actions .detail-trigger>span:last-child{font-size:inherit}
+.case-screen-gallery{display:grid;gap:24px;margin-top:38px}
+.case-screen-gallery .modal-screen{margin:0}
+#case-stutplatform .modal-screen figcaption strong{color:var(--ink);font-weight:660}
+@media(max-width:900px){.live-projects{grid-template-columns:1fr}.live-projects .feature-content h3{font-size:37px}}
+@media(max-width:390px){.feature-actions .detail-trigger{margin-top:0}}
